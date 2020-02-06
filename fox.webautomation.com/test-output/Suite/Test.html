@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 15 19:09:57 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37323 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='projects.fox.tests.foxtest.test1()'><b>test1</b><br>Test class: projects.fox.tests.foxtest<br>Test method: EPAY_1<br>Parameters: {TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police Department - Studio: Guards-001, TestData3=8, TestData2=Sick, TestName=test1, TestData1=01/22/2020 - 01/22/2020, TestData10=Awaiting Approval, TestData9=Sick}<br/>
+<a href="#Output-765420745" onClick='toggleBox("Output-765420745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-765420745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-765420745">
+Click on [click_Apply_button]<br /><br/>
+Click on [click_Apply_button]<br /><br/>
+Click on [click_Apply_button]<br /><br/>
+Enter text [01/22/2020 - 01/22/2020] in the [entertext_PTORequest_Dates] Text Box<br /><br/>
+Click on [click_Apply_button]<br /><br/>
+Click on [click_dropdown_ptorequesttype]<br /><br/>
+Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br /><br/>
+Click on [click_dropdown_ptorequesttype_sick]<br /><br/>
+Enter text [8] in the [entertext_Totalhours] Text Box<br /><br/>
+Click on [click_submit_button]<br /><br/>
+Get the List of Text from [List_ptohistort_records]<br /><br/>
+[assertEquals]: verify Location<br /><br/>
+[assertEquals]: Expected [9608.70 - Police Department - Studio: Guards-001] Actual [9608.70 - Police Department - Studio: Guards-001]<br /><br/>
+[assertEquals]: verify Start Date<br /><br/>
+[assertEquals]: Expected [01/22/2020] Actual [01/22/2020]<br /><br/>
+[assertEquals]: verify End Date<br /><br/>
+[assertEquals]: Expected [01/22/2020] Actual [01/22/2020]<br /><br/>
+[assertEquals]: verify Hours<br /><br/>
+[assertEquals]: Expected [8] Actual [8]<br /><br/>
+[assertEquals]: verify Days<br /><br/>
+[assertEquals]: Expected [1] Actual [1]<br /><br/>
+[assertEquals]: verify Type<br /><br/>
+[assertEquals]: Expected [Sick] Actual [Sick]<br /><br/>
+[assertEquals]: Verify Status<br /><br/>
+[assertEquals]: Expected [Awaiting Approval] Actual [Awaiting Approval]<br /><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>projects.fox.tests.foxtest@1e6454ec</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Tour Cash weekly Icon Found<br />]]>
+    </line>
+    <line>
+      <![CDATA[Tour Revenue Icon Found<br />]]>
+    </line>
+    <line>
+      <![CDATA[Tour Inventory Icon Found<br />]]>
+    </line>
+    <line>
+      <![CDATA[Target Audience Builder Icon Found<br />]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51477" started-at="2020-02-06T18:50:42 IST" finished-at="2020-02-06T18:51:33 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51477" started-at="2020-02-06T18:50:42 IST" finished-at="2020-02-06T18:51:33 IST">
+      <class name="projects.fox.tests.foxaitest">
+        <test-method status="PASS" signature="preinit()[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="preinit" is-config="true" duration-ms="221" started-at="2020-02-06T18:50:41 IST" finished-at="2020-02-06T18:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preinit -->
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="init" is-config="true" duration-ms="5495" started-at="2020-02-06T18:50:42 IST" finished-at="2020-02-06T18:50:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54336c81]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="test" is-config="true" duration-ms="3338" started-at="2020-02-06T18:50:47 IST" finished-at="2020-02-06T18:50:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="extent" is-config="true" duration-ms="4" started-at="2020-02-06T18:50:51 IST" finished-at="2020-02-06T18:50:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_cashweekly() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extent -->
+        <test-method status="PASS" signature="test_tour_cashweekly()[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="test_tour_cashweekly" duration-ms="8073" started-at="2020-02-06T18:50:51 IST" finished-at="2020-02-06T18:50:59 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Tour Cash weekly Icon Found<br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test_tour_cashweekly -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="getResult" is-config="true" duration-ms="10" started-at="2020-02-06T18:50:59 IST" finished-at="2020-02-06T18:50:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_tour_cashweekly status=SUCCESS method=foxaitest.test_tour_cashweekly()[pri:0, instance:projects.fox.tests.foxaitest@e874448] output=Tour Cash weekly Icon Found<br />]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_cashweekly() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-06T18:50:59 IST" finished-at="2020-02-06T18:50:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_revenue() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extent -->
+        <test-method status="PASS" signature="test_tour_revenue()[pri:1, instance:projects.fox.tests.foxaitest@e874448]" name="test_tour_revenue" duration-ms="17549" started-at="2020-02-06T18:50:59 IST" finished-at="2020-02-06T18:51:16 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Tour Revenue Icon Found<br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test_tour_revenue -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="getResult" is-config="true" duration-ms="3" started-at="2020-02-06T18:51:16 IST" finished-at="2020-02-06T18:51:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_tour_revenue status=SUCCESS method=foxaitest.test_tour_revenue()[pri:1, instance:projects.fox.tests.foxaitest@e874448] output=Tour Revenue Icon Found<br />]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_revenue() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="extent" is-config="true" duration-ms="2" started-at="2020-02-06T18:51:16 IST" finished-at="2020-02-06T18:51:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_inventory() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extent -->
+        <test-method status="PASS" signature="test_tour_inventory()[pri:2, instance:projects.fox.tests.foxaitest@e874448]" name="test_tour_inventory" duration-ms="9284" started-at="2020-02-06T18:51:16 IST" finished-at="2020-02-06T18:51:26 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Tour Inventory Icon Found<br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test_tour_inventory -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="getResult" is-config="true" duration-ms="2" started-at="2020-02-06T18:51:26 IST" finished-at="2020-02-06T18:51:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_tour_inventory status=SUCCESS method=foxaitest.test_tour_inventory()[pri:2, instance:projects.fox.tests.foxaitest@e874448] output=Tour Inventory Icon Found<br />]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_tour_inventory() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-06T18:51:26 IST" finished-at="2020-02-06T18:51:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_target_audience_builder() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extent -->
+        <test-method status="PASS" signature="test_target_audience_builder()[pri:3, instance:projects.fox.tests.foxaitest@e874448]" name="test_target_audience_builder" duration-ms="5872" started-at="2020-02-06T18:51:26 IST" finished-at="2020-02-06T18:51:31 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Target Audience Builder Icon Found<br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test_target_audience_builder -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="getResult" is-config="true" duration-ms="2" started-at="2020-02-06T18:51:31 IST" finished-at="2020-02-06T18:51:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_target_audience_builder status=SUCCESS method=foxaitest.test_target_audience_builder()[pri:3, instance:projects.fox.tests.foxaitest@e874448] output=Target Audience Builder Icon Found<br />]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void projects.fox.tests.foxaitest.test_target_audience_builder() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:projects.fox.tests.foxaitest@e874448]" name="tearDown" is-config="true" duration-ms="1778" started-at="2020-02-06T18:51:31 IST" finished-at="2020-02-06T18:51:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- projects.fox.tests.foxaitest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
