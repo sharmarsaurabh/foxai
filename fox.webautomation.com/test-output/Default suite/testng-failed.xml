@@ -5,6 +5,7 @@
     <classes>
       <class name="projects.fox.tests.foxaitest">
         <methods>
+          <include name="test_tour_cashweekly" invocation-numbers="0"/>
           <include name="getResult"/>
           <include name="test_tour_revenue"/>
           <include name="preinit"/>

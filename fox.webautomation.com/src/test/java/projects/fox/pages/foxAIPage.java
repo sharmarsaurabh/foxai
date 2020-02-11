@@ -12,21 +12,22 @@ public class foxAIPage extends BasePage {
       //Locators Webelement
 	
 	 // ICONS
-//    @FindBy(xpath = "/html/body/div/div[2]/div/aside/div/div/div/ul/li[2]/a") WebElement click_tour_cashweekly;
       @FindBy(xpath = "//*[@id=\"tour-cashweekly\"]/a") WebElement click_tour_cashweekly;
-//    @FindBy(xpath = "/html/body/div/div[2]/div/aside/div/div/div/ul/li[1]/a") WebElement click_tour_revenue;
       @FindBy(xpath = "//*[@id=\"tour-revenue\"]/a") WebElement click_tour_revenue;    
-//    @FindBy(xpath = "/html/body/div/div[2]/div/aside/div/div/div/ul/li[3]/a") WebElement click_tour_inventory;
       @FindBy(xpath = "//*[@id=\"tour-inventory\"]/a") WebElement click_tour_inventory;
-//    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div/aside/nav/div/ul/li[5]/a/img") WebElement click_target_audience_builder;
       @FindBy(xpath = "//*[@id=\"root\"]/div/div/div/aside/nav/div/ul/li[5]/a") WebElement click_target_audience_builder;
- 
-
       
+     // Text on Cash Weekly Page
+      @FindBy(xpath ="//*[@id=\"app\"]/div[2]/div/main/div/div/div/div[2]/div/div[1]/div/div[2]/div/h3") WebElement check_cy_booked;
+      @FindBy(xpath ="//*[@id=\"app\"]/div[2]/div/main/div/div/div/div[2]/div/div[3]/div/div[1]/div/h3") WebElement check_current_forecast_total;
+      @FindBy(xpath ="//*[@id=\"app\"]/div[2]/div/main/div/div/div/div[2]/div/div[4]/div/div[5]/div/h3") WebElement check_py_booked_percentage;
+      @FindBy(className ="datalabel-line-total-ad-sales-quarter-to-date-sales-velocity-chart") List<WebElement> check_total_ad_sales ;
+      				 
+    
+    
       
      // Other Elements 
       @FindBy(xpath = "/html/body/div/div[2]/div/main/div/div/div/div[2]/div/div[1]/h1") WebElement check_cash_pacing;
-      
       @FindBy(xpath = "/html/body/div/div[2]/div/main/div/div/div/div/div[1]/div/div/input") WebElement enter_tour_revenue_company;
       @FindBy(xpath = "/html/body/div/div[2]/div/main/div/div/div/div/div[2]/div/div/div/div[2]/div") WebElement click_tour_revenue_company;
       @FindBy(xpath = "//*[@id='app']/div[2]/div/main/div/div/div/div/div/div[2]/div[1]/h1") WebElement check_tour_revenue_company_name;
@@ -59,6 +60,28 @@ public class foxAIPage extends BasePage {
             	waitForElementToBePresent("Cash Pacing", check_cash_pacing,500000);
             	
           } 
+            
+            public String check_cy_booked() {
+            	return getText("Checking CY Booked",check_cy_booked);
+            	
+            }
+            
+            public String check_current_forecast_total() {
+            	return getText("Checking Current Forecast Total",check_current_forecast_total);
+            	
+            }
+            
+            public String check_py_booked_percentage() {
+            	return getText("Checking PY Booked Percentage",check_py_booked_percentage);
+            	
+            }
+            
+            
+            public List<String> check_total_ad_sales() {
+            	return getTextFromAllElements("Checking Total Ad Sales Velocity",check_total_ad_sales);
+            	
+            }
+            
             
             public void check_cash_pacing() {
                 

@@ -25,27 +25,42 @@ public class foxaitest extends BaseTest {
       @BeforeClass
       public void test() throws InterruptedException {
             
-    	  //With config file
+      //With config file
     	  
 	   foxAILoginPage= new foxAILoginPage();
        foxAILoginPage.openLoginPage(getURL("URL"));         
       }
       
-      @Test(enabled=true,priority=0)
-      public void test_tour_cashweekly() throws InterruptedException {
+      @Test(enabled=true,priority=0,dataProvider="ExcelTestData",description = "Cash Weekly Data")
+      public void test_tour_cashweekly(Hashtable<String, String> mainTabs) throws InterruptedException {
             
     	  foxAIPage=new foxAIPage();
     	  foxAIPage.wait_tour_cashweekly();
+    	  foxAIPage.report_log_text("Tour Cash weekly Icon Found");
+    	  Thread.sleep(10000);
     	  foxAIPage.click_tour_cashweekly();
     	  
     	  foxAIPage.wait_cash_pacing();
-    	  foxAIPage.report_log_text("Tour Cash weekly Icon Found");
+   	  
+    	  assertEquals(foxAIPage.check_cy_booked(),mainTabs.get("TestData1"),"Verify CY Booked");
+    	  foxAIPage.report_log_text("CY Booked value Verified");
+    	  assertEquals(foxAIPage.check_current_forecast_total(),mainTabs.get("TestData2"),"Verify Current Forecast Total");
+    	  foxAIPage.report_log_text("Current Forecast Total value Verified");
+    	  assertEquals(foxAIPage.check_py_booked_percentage(),mainTabs.get("TestData3"),"Verify PY Booked Percentage");
+    	  foxAIPage.report_log_text("PY Booked Percentage value Verified");
+    	  
+    	  List<String> myData = foxAIPage.check_total_ad_sales();
+    	  
+    	  assertEquals(myData.get(4),mainTabs.get("TestData4"),"Verify Total Ad Sales Velocity");
+    	  foxAIPage.report_log_text("Total Ad Sales Velocity value Verified");
+    	  
       }
       
       @Test(enabled=true,priority=1)
       public void test_tour_revenue() throws InterruptedException {
     	  
     	  foxAIPage.click_tour_revenue();
+    	  foxAIPage.report_log_text("Tour Revenue Icon Found");
     	  
     	  Thread.sleep(10000);
     	  foxAIPage.wait_entertext_revenue_company();
@@ -53,30 +68,40 @@ public class foxaitest extends BaseTest {
     	  Thread.sleep(10000);
     	  foxAIPage.wait_tour_revenue_company();
     	  foxAIPage.click_tour_revenue_company();
-    	  
+    	  Thread.sleep(10000);
     	  foxAIPage.wait_tour_revenue_company_name(companyName);
-    	  foxAIPage.report_log_text("Tour Revenue Icon Found");
+    	  
       }
       
       @Test(enabled=true,priority=2)
       public void test_tour_inventory() throws InterruptedException {
-    	 
-    	   
+
     	  foxAIPage.click_tour_inventory();
-    	  foxAIPage.check_inventory_gross();
     	  foxAIPage.report_log_text("Tour Inventory Icon Found");
+    	  Thread.sleep(10000);
+    	  foxAIPage.check_inventory_gross();
       }
       
       @Test(enabled=true,priority=3)
       public void test_target_audience_builder() throws InterruptedException {
 
     	  foxAIPage.click_target_audience_builder();
-    	  foxAIPage.wait_target_audience_builder_text();
     	  foxAIPage.report_log_text("Target Audience Builder Icon Found");
+    	  Thread.sleep(10000);
+    	  foxAIPage.wait_target_audience_builder_text();
+
     	  
       }
       
- 
+      @DataProvider(name="ExcelTestData")
+      public Object[][] hashdata(Method m) {
+
+
+            return new Object[][]{  
+                  {readTestDataByMethodName(m.getName())}
+            };
+
+      } 
 }
 
             
