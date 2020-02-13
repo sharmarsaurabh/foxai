@@ -37,13 +37,13 @@ public class Log extends Config {
       public static synchronized void error(String msg) {
             Logger info = Log.getLogger("info");
             info.error(msg);
-            Reporter.log(msg + "<br />");
+            Reporter.log(msg + "<br />"); 
       }
 
       public static synchronized void error(String msg, Throwable t) {
             Logger info = Log.getLogger("info");
             info.error(msg, t);
-            Reporter.log(msg + "<br />");
+            Reporter.log(msg + "<br />"); 
       }
 
       public static void debug(String msg) {

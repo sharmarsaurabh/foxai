@@ -7,14 +7,11 @@
         <methods>
           <include name="test_tour_cashweekly" invocation-numbers="0"/>
           <include name="getResult"/>
-          <include name="test_tour_revenue"/>
           <include name="preinit"/>
           <include name="init"/>
           <include name="test"/>
           <include name="tearDown"/>
           <include name="extent"/>
-          <include name="test_target_audience_builder"/>
-          <include name="test_tour_inventory"/>
         </methods>
       </class> <!-- projects.fox.tests.foxaitest -->
     </classes>

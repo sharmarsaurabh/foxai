@@ -44,15 +44,19 @@ public class foxaitest extends BaseTest {
    	  
     	  assertEquals(foxAIPage.check_cy_booked(),mainTabs.get("TestData1"),"Verify CY Booked");
     	  foxAIPage.report_log_text("CY Booked value Verified");
+    	
     	  assertEquals(foxAIPage.check_current_forecast_total(),mainTabs.get("TestData2"),"Verify Current Forecast Total");
     	  foxAIPage.report_log_text("Current Forecast Total value Verified");
+    	  
     	  assertEquals(foxAIPage.check_py_booked_percentage(),mainTabs.get("TestData3"),"Verify PY Booked Percentage");
     	  foxAIPage.report_log_text("PY Booked Percentage value Verified");
     	  
     	  List<String> myData = foxAIPage.check_total_ad_sales();
-    	  
-    	  assertEquals(myData.get(4),mainTabs.get("TestData4"),"Verify Total Ad Sales Velocity");
+    	  assertEquals(myData.get(5),mainTabs.get("TestData4"),"Verify Total Ad Sales Velocity");
     	  foxAIPage.report_log_text("Total Ad Sales Velocity value Verified");
+    	  
+    	  assertEquals(foxAIPage.check_weekly_gain_loss(),mainTabs.get("TestData5"),"Verify Weekly Gain/Loss By Property");
+    	  foxAIPage.report_log_text(" Weekly Gain/Loss By Property value Verified");
     	  
       }
       

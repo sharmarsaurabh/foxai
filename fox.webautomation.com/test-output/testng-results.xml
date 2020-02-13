@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Tour Cash weekly Icon Found<br />]]>
     </line>
     <line>
+      <![CDATA[[assertEquals]: Expected [$3,977.0] Actual [$3,977.0]]]>
+    </line>
+    <line>
       <![CDATA[CY Booked value Verified<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Expected [$4,272.2] Actual [$4,272.2]]]>
     </line>
     <line>
       <![CDATA[Current Forecast Total value Verified<br />]]>
     </line>
     <line>
+      <![CDATA[[assertEquals]: Expected [89.7%] Actual [89.7%]]]>
+    </line>
+    <line>
       <![CDATA[PY Booked Percentage value Verified<br />]]>
     </line>
     <line>
+      <![CDATA[[assertEquals]: Expected [$284.6] Actual [$284.6]]]>
+    </line>
+    <line>
       <![CDATA[Total Ad Sales Velocity value Verified<br />]]>
+    </line>
+    <line>
+      <![CDATA[Assertion failed: expected [$100] but found [$100.0]]]>
+    </line>
+    <line>
+      <![CDATA[Assertion failed: expected [$100] but found [$100.0]<br />]]>
     </line>
     <line>
       <![CDATA[Tour Revenue Icon Found<br />]]>
@@ -26,31 +44,31 @@
       <![CDATA[Target Audience Builder Icon Found<br />]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90722" started-at="2020-02-11T19:56:50 IST" finished-at="2020-02-11T19:58:21 IST">
+  <suite name="Default suite" duration-ms="84795" started-at="2020-02-13T19:43:18 IST" finished-at="2020-02-13T19:44:43 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90722" started-at="2020-02-11T19:56:50 IST" finished-at="2020-02-11T19:58:21 IST">
+    <test name="Default test" duration-ms="84795" started-at="2020-02-13T19:43:18 IST" finished-at="2020-02-13T19:44:43 IST">
       <class name="projects.fox.tests.foxaitest">
-        <test-method status="PASS" signature="preinit()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="preinit" is-config="true" duration-ms="212" started-at="2020-02-11T19:56:50 IST" finished-at="2020-02-11T19:56:50 IST">
+        <test-method status="PASS" signature="preinit()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="preinit" is-config="true" duration-ms="275" started-at="2020-02-13T19:43:18 IST" finished-at="2020-02-13T19:43:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="init" is-config="true" duration-ms="12712" started-at="2020-02-11T19:56:50 IST" finished-at="2020-02-11T19:57:03 IST">
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="init" is-config="true" duration-ms="5802" started-at="2020-02-13T19:43:18 IST" finished-at="2020-02-13T19:43:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e4ea0bd]]>
+                <![CDATA[org.testng.TestRunner@3887cf88]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="test()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="test" is-config="true" duration-ms="876" started-at="2020-02-11T19:57:03 IST" finished-at="2020-02-11T19:57:04 IST">
+        <test-method status="PASS" signature="test()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="test" is-config="true" duration-ms="2297" started-at="2020-02-13T19:43:24 IST" finished-at="2020-02-13T19:43:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="5" started-at="2020-02-11T19:57:04 IST" finished-at="2020-02-11T19:57:04 IST">
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="5" started-at="2020-02-13T19:43:26 IST" finished-at="2020-02-13T19:43:26 IST">
           <params>
             <param index="0">
               <value>
@@ -61,37 +79,98 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method status="PASS" signature="test_tour_cashweekly(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_cashweekly" duration-ms="15358" started-at="2020-02-11T19:57:04 IST" description="Cash Weekly Data" data-provider="ExcelTestData" finished-at="2020-02-11T19:57:19 IST">
+        <test-method status="FAIL" signature="test_tour_cashweekly(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_cashweekly" duration-ms="17759" started-at="2020-02-13T19:43:26 IST" description="Cash Weekly Data" data-provider="ExcelTestData" finished-at="2020-02-13T19:43:44 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TestData2=$4,279.8, TestData1=$658.7, TestName=test_tour_cashweekly, TestData4=$53.2, TestData3=91.1%}]]>
+                <![CDATA[{TestData2=$4,272.2, TestData1=$3,977.0, TestName=test_tour_cashweekly, TestData5=$100, TestData4=$284.6, TestData3=89.7%}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [$100] but found [$100.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [$100] but found [$100.0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at com.baseproject.base.BaseTest.assertEquals(BaseTest.java:261)
+at projects.fox.tests.foxaitest.test_tour_cashweekly(foxaitest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Tour Cash weekly Icon Found<br />]]>
             </line>
             <line>
+              <![CDATA[[assertEquals]: Expected [$3,977.0] Actual [$3,977.0]]]>
+            </line>
+            <line>
               <![CDATA[CY Booked value Verified<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [$4,272.2] Actual [$4,272.2]]]>
             </line>
             <line>
               <![CDATA[Current Forecast Total value Verified<br />]]>
             </line>
             <line>
+              <![CDATA[[assertEquals]: Expected [89.7%] Actual [89.7%]]]>
+            </line>
+            <line>
               <![CDATA[PY Booked Percentage value Verified<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [$284.6] Actual [$284.6]]]>
             </line>
             <line>
               <![CDATA[Total Ad Sales Velocity value Verified<br />]]>
             </line>
+            <line>
+              <![CDATA[Assertion failed: expected [$100] but found [$100.0]]]>
+            </line>
+            <line>
+              <![CDATA[Assertion failed: expected [$100] but found [$100.0]<br />]]>
+            </line>
           </reporter-output>
         </test-method> <!-- test_tour_cashweekly -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="10" started-at="2020-02-11T19:57:19 IST" finished-at="2020-02-11T19:57:19 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="815" started-at="2020-02-13T19:43:44 IST" finished-at="2020-02-13T19:43:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test_tour_cashweekly status=SUCCESS method=foxaitest.test_tour_cashweekly(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxaitest@60285225] output=Tour Cash weekly Icon Found<br />]]]>
+                <![CDATA[[TestResult name=test_tour_cashweekly status=FAILURE method=foxaitest.test_tour_cashweekly(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxaitest@60285225] output=Tour Cash weekly Icon Found<br />]]]>
               </value>
             </param>
             <param index="1">
@@ -103,7 +182,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-11T19:57:19 IST" finished-at="2020-02-11T19:57:19 IST">
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-13T19:43:45 IST" finished-at="2020-02-13T19:43:45 IST">
           <params>
             <param index="0">
               <value>
@@ -114,14 +193,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method status="PASS" signature="test_tour_revenue()[pri:1, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_revenue" duration-ms="31396" started-at="2020-02-11T19:57:19 IST" finished-at="2020-02-11T19:57:51 IST">
+        <test-method status="PASS" signature="test_tour_revenue()[pri:1, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_revenue" duration-ms="30744" started-at="2020-02-13T19:43:45 IST" finished-at="2020-02-13T19:44:16 IST">
           <reporter-output>
             <line>
               <![CDATA[Tour Revenue Icon Found<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- test_tour_revenue -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="1" started-at="2020-02-11T19:57:51 IST" finished-at="2020-02-11T19:57:51 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="2" started-at="2020-02-13T19:44:16 IST" finished-at="2020-02-13T19:44:16 IST">
           <params>
             <param index="0">
               <value>
@@ -137,7 +216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-11T19:57:51 IST" finished-at="2020-02-11T19:57:51 IST">
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-13T19:44:16 IST" finished-at="2020-02-13T19:44:16 IST">
           <params>
             <param index="0">
               <value>
@@ -148,14 +227,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method status="PASS" signature="test_tour_inventory()[pri:2, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_inventory" duration-ms="13512" started-at="2020-02-11T19:57:51 IST" finished-at="2020-02-11T19:58:04 IST">
+        <test-method status="PASS" signature="test_tour_inventory()[pri:2, instance:projects.fox.tests.foxaitest@60285225]" name="test_tour_inventory" duration-ms="13435" started-at="2020-02-13T19:44:16 IST" finished-at="2020-02-13T19:44:29 IST">
           <reporter-output>
             <line>
               <![CDATA[Tour Inventory Icon Found<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- test_tour_inventory -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="1" started-at="2020-02-11T19:58:04 IST" finished-at="2020-02-11T19:58:04 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="2" started-at="2020-02-13T19:44:29 IST" finished-at="2020-02-13T19:44:29 IST">
           <params>
             <param index="0">
               <value>
@@ -171,7 +250,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-11T19:58:04 IST" finished-at="2020-02-11T19:58:04 IST">
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="extent" is-config="true" duration-ms="1" started-at="2020-02-13T19:44:29 IST" finished-at="2020-02-13T19:44:29 IST">
           <params>
             <param index="0">
               <value>
@@ -182,14 +261,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method status="PASS" signature="test_target_audience_builder()[pri:3, instance:projects.fox.tests.foxaitest@60285225]" name="test_target_audience_builder" duration-ms="14869" started-at="2020-02-11T19:58:04 IST" finished-at="2020-02-11T19:58:19 IST">
+        <test-method status="PASS" signature="test_target_audience_builder()[pri:3, instance:projects.fox.tests.foxaitest@60285225]" name="test_target_audience_builder" duration-ms="12213" started-at="2020-02-13T19:44:29 IST" finished-at="2020-02-13T19:44:41 IST">
           <reporter-output>
             <line>
               <![CDATA[Target Audience Builder Icon Found<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- test_target_audience_builder -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="2" started-at="2020-02-11T19:58:19 IST" finished-at="2020-02-11T19:58:19 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="getResult" is-config="true" duration-ms="1" started-at="2020-02-13T19:44:41 IST" finished-at="2020-02-13T19:44:41 IST">
           <params>
             <param index="0">
               <value>
@@ -205,7 +284,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="tearDown" is-config="true" duration-ms="1585" started-at="2020-02-11T19:58:19 IST" finished-at="2020-02-11T19:58:21 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:projects.fox.tests.foxaitest@60285225]" name="tearDown" is-config="true" duration-ms="1417" started-at="2020-02-13T19:44:41 IST" finished-at="2020-02-13T19:44:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

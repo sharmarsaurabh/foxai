@@ -9,12 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">90,722</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">84,795</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">projects.fox.tests.foxaitest</td><td><a href="#m0">test_target_audience_builder</a></td><td rowspan="1">1581431284844</td><td rowspan="1">14869</td></tr><tr class="passedeven"><td><a href="#m1">test_tour_cashweekly</a></td><td rowspan="1">1581431224549</td><td rowspan="1">15358</td></tr><tr class="passedeven"><td><a href="#m2">test_tour_inventory</a></td><td rowspan="1">1581431271327</td><td rowspan="1">13512</td></tr><tr class="passedeven"><td><a href="#m3">test_tour_revenue</a></td><td rowspan="1">1581431239926</td><td rowspan="1">31396</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">projects.fox.tests.foxaitest</td><td><a href="#m0">test_tour_cashweekly</a></td><td rowspan="1">1581603206805</td><td rowspan="1">17759</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">projects.fox.tests.foxaitest</td><td><a href="#m1">test_target_audience_builder</a></td><td rowspan="1">1581603269579</td><td rowspan="1">12213</td></tr><tr class="passedeven"><td><a href="#m2">test_tour_inventory</a></td><td rowspan="1">1581603256139</td><td rowspan="1">13435</td></tr><tr class="passedeven"><td><a href="#m3">test_tour_revenue</a></td><td rowspan="1">1581603225390</td><td rowspan="1">30744</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">projects.fox.tests.foxaitest#test_target_audience_builder</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Target Audience Builder Icon Found<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">projects.fox.tests.foxaitest#test_tour_cashweekly</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TestData2=$4,279.8, TestData1=$658.7, TestName=test_tour_cashweekly, TestData4=$53.2, TestData3=91.1%}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Tour Cash weekly Icon Found<br /><br/>CY Booked value Verified<br /><br/>Current Forecast Total value Verified<br /><br/>PY Booked Percentage value Verified<br /><br/>Total Ad Sales Velocity value Verified<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">projects.fox.tests.foxaitest#test_tour_cashweekly</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{TestData2=$4,272.2, TestData1=$3,977.0, TestName=test_tour_cashweekly, TestData5=$100, TestData4=$284.6, TestData3=89.7%}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Tour Cash weekly Icon Found<br /><br/>[assertEquals]: Expected [$3,977.0] Actual [$3,977.0]<br/>CY Booked value Verified<br /><br/>[assertEquals]: Expected [$4,272.2] Actual [$4,272.2]<br/>Current Forecast Total value Verified<br /><br/>[assertEquals]: Expected [89.7%] Actual [89.7%]<br/>PY Booked Percentage value Verified<br /><br/>[assertEquals]: Expected [$284.6] Actual [$284.6]<br/>Total Ad Sales Velocity value Verified<br /><br/>Assertion failed: expected [$100] but found [$100.0]<br/>Assertion failed: expected [$100] but found [$100.0]<br /></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [$100] but found [$100.0]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.baseproject.base.BaseTest.assertEquals(BaseTest.java:261)
+	at projects.fox.tests.foxaitest.test_tour_cashweekly(foxaitest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">projects.fox.tests.foxaitest#test_target_audience_builder</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Target Audience Builder Icon Found<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">projects.fox.tests.foxaitest#test_tour_inventory</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Tour Inventory Icon Found<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">projects.fox.tests.foxaitest#test_tour_revenue</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Tour Revenue Icon Found<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

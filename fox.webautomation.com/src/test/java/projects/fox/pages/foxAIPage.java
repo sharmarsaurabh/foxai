@@ -22,8 +22,9 @@ public class foxAIPage extends BasePage {
       @FindBy(xpath ="//*[@id=\"app\"]/div[2]/div/main/div/div/div/div[2]/div/div[3]/div/div[1]/div/h3") WebElement check_current_forecast_total;
       @FindBy(xpath ="//*[@id=\"app\"]/div[2]/div/main/div/div/div/div[2]/div/div[4]/div/div[5]/div/h3") WebElement check_py_booked_percentage;
       @FindBy(className ="datalabel-line-total-ad-sales-quarter-to-date-sales-velocity-chart") List<WebElement> check_total_ad_sales ;
-      				 
-    
+//    @FindBy(className ="highcharts-data-labels highcharts-series-0 highcharts-column-series highcharts-tracker highcharts-series-hover") List<WebElement> check_weekly_gain_loss ;
+      @FindBy(className ="highcharts-text-outline") WebElement check_weekly_gain_loss ;
+
     
       
      // Other Elements 
@@ -76,13 +77,17 @@ public class foxAIPage extends BasePage {
             	
             }
             
+            public String check_weekly_gain_loss() {
+            	return getText("Checking Weekly Gain/Loss By Property",check_weekly_gain_loss);
+            	
+            }
             
             public List<String> check_total_ad_sales() {
             	return getTextFromAllElements("Checking Total Ad Sales Velocity",check_total_ad_sales);
             	
             }
             
-            
+                        
             public void check_cash_pacing() {
                 
             	checkDisplayedElement("Cash Pacing", check_cash_pacing );

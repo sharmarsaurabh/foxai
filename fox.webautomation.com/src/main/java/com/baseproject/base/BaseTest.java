@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.logging.impl.Log4JLogger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
@@ -258,9 +259,13 @@ public class BaseTest extends WebDriverFactory {
             try {
                   Log.info("[assertEquals]: " + description);
                   Assert.assertEquals(actual, expected);
+                  Reporter.log("[assertEquals]: Expected [" + expected.toString() + "] Actual [" + actual.toString() + "]");
                   Log.info("[assertEquals]: Expected [" + expected.toString() + "] Actual [" + actual.toString() + "]");
+
+
             } catch (AssertionError e) {
-                  Log.error("Assertion failed: expected [" + expected.toString() + "] but found [" + actual.toString() + "]");
+            		Reporter.log("Assertion failed: expected [" + expected.toString() + "] but found [" + actual.toString() + "]");
+            		Log.error("Assertion failed: expected [" + expected.toString() + "] but found [" + actual.toString() + "]");
                   throw e;
             }
       }
